@@ -1,6 +1,8 @@
 # LolCatCat
 This is a collection of bash scripts to alias and manage your commands to pipe their outputs into lolcat. For the lulz.
 
+[busyloop lolcat](https://github.com/busyloop/lolcat)
+
 ## Install
 Clone this repo and and source the lolcatcat script.
 ```
