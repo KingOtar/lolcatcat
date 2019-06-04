@@ -1,6 +1,7 @@
 Safely remove aliases
 specify command and arg 
-allow customization and animation to each command (command opitons)
+allow customization and animation to each command (command options)
 add testing
 version
 fix multiple args
+validation for args 
