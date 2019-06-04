@@ -1,0 +1,40 @@
+#!/bin/bash
+
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+cd "$DIR"
+
+usage() {
+    printf "must provide command to add. Ex. $(basename $0) [command to add to lolcat aliases]\n"
+}
+
+. ./configs
+. ./functions
+
+if [ "$1" == "" ]
+then
+        usage
+        exit 1
+fi
+
+check_install
+check_commands
+
+COM_FILE=$LOLCATCATHOME/commands
+
+OLDIFS=$IFS;
+IFS=$'\n'
+LOADED=0
+while read com; do
+        if [ "$com" = $1 ];
+        then
+		#delete the command from the file
+		sed -i.bak "/$com/d" $COM_FILE
+		echo "removed $com from lolcatcat"
+		. ./lolcatcat
+		exit 
+        fi
+done <$COM_FILE
+IFS=$OLDIFS
+
+echo "Command $1 was not in lolcatcat"
+exit 1

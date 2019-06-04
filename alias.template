@@ -1,0 +1,2 @@
+#!/bin/bash
+eval $(basename "$0") "$@" | lolcat

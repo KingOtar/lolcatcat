@@ -1,0 +1,13 @@
+die () { echo "err: $1";exit 1; }
+
+function check_install() {
+	command -v lolcat > /dev/null 2>&1 \
+        	|| die "lolcat is not installed"
+}
+
+function check_commands() {
+	mkdir -p $LOLCATCATHOME/aliases
+	touch $LOLCATCATHOME/commands
+	
+}
+

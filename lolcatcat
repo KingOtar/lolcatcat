@@ -1,0 +1,26 @@
+#!/bin/bash
+
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+cd "$DIR"
+
+. ./configs
+. ./functions
+
+check_commands
+
+COM_FILE=$LOLCATCATHOME/commands
+ALIAS_FILE=$LOLCATCATHOME/aliases
+
+#clean out current aliases
+rm -f $ALIAS_FILE/*
+
+OLDIFS=$IFS;
+IFS=$'\n'
+LOADED=0
+while read com; do
+	cp alias.template $ALIAS_FILE/$com
+	chmod +x $ALIAS_FILE/$com
+	alias $com="\"$ALIAS_FILE/$com\""
+done <$COM_FILE
+IFS=$OLDIFS
+
