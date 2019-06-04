@@ -5,3 +5,6 @@ add testing
 version
 fix multiple args
 validation for args 
+
+*** Fix arguments in qoutes and spaces
+
