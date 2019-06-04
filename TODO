@@ -3,3 +3,4 @@ specify command and arg
 allow customization and animation to each command (command opitons)
 add testing
 version
+fix multiple args
