@@ -30,7 +30,7 @@ while read com; do
         then
 		#delete the command from the file
 		sed -i.bak "/$com/d" $COM_FILE
-		echo "removed $com from lolcatcat"
+		echo "Removed $com from lolcatcat"
 		. ./lolcatcat
 		exit 
         fi
