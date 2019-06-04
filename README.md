@@ -2,7 +2,7 @@
 This is a collection of bash scripts to alias and manage your commands to pipe their outputs into lolcat. For the lulz.
 
 ## Install
-Clone this repo and and source the lolcat script.
+Clone this repo and and source the lolcatcat script.
 ```
 git clone https://github.com/KingOtar/lolcatcat.git ~/lolcatcat
 echo "source ~/lolcatcat/lolcatcat" >> .bash_profile
