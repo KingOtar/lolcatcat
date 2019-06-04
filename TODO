@@ -6,7 +6,5 @@ version
 fix multiple args
 validation for args 
 
-*** Fix arguments in qoutes and spaces
-
 Environment variable for turning lolcatcat on and off
 
