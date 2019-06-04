@@ -4,3 +4,4 @@ allow customization and animation to each command (command options)
 add testing
 version
 fix multiple args
+validation for args 
