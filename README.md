@@ -5,7 +5,7 @@ This is a collection of bash scripts to alaias and manage your commands to pipe 
 Clone this repo and and source your the lolcat script.
 ```
 git clone https://github.com/KingOtar/lolcatcat.git ~/lolcatcat
-echo "source ~/lolcatcat/lolcatcat"
+echo "source ~/lolcatcat/lolcatcat" >> .bash_profile
 ```
 
 The script reads out of the  file by default for the list of commands to pipe to lolcat and adds alias scripts to `~/.lolcatcat/aliases`
