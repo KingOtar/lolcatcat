@@ -1,5 +1,6 @@
 #!/bin/bash
 
+CURRENT_DIR=$(pwd)
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 cd "$DIR"
 
@@ -36,5 +37,6 @@ while read com; do
 done <$COM_FILE
 IFS=$OLDIFS
 
+cd $CURRENT_DIR
 echo "Command $1 was not in lolcatcat"
 exit 1
