@@ -13,6 +13,9 @@ The script reads out of the  file by default for the list of commands to pipe to
 
 You can execute the `addlolcat` and `rmlolcat` commands to add or remove commands from the list or edit `~/.lolcatcat/commands` manually.
 
+## Requirements
+`lolcat` must be installed and in the $PATH variable.
+
 ## Warning
 Be careful on which commands are added to this script. They are potentially breaking. Test before usage.
 
