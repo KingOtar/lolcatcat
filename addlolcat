@@ -38,7 +38,6 @@ if [ $LOADED = "0" ]
 then
 	echo $1 | xargs >> $COM_FILE
 	echo "Added $1 to lolcatcat"
-	. ./lolcatcat
 else
 	die "Command already loaded"
 fi

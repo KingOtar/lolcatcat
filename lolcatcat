@@ -13,6 +13,11 @@ COM_FILE=$LOLCATCATHOME/commands
 ALIAS_FILE=$LOLCATCATHOME/aliases
 
 #clean out current aliases
+for ali in $ALIAS_FILE/*
+do
+	unalias $(basename $ali)
+done
+
 rm -f $ALIAS_FILE/*
 
 OLDIFS=$IFS;
