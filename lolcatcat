@@ -15,7 +15,7 @@ ALIAS_FILE=$LOLCATCATHOME/aliases
 #clean out current aliases
 for ali in $ALIAS_FILE/*
 do
-	unalias $(basename $ali)
+	unalias $(basename $ali) 2>/dev/null
 done
 
 rm -f $ALIAS_FILE/*
