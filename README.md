@@ -19,3 +19,5 @@ You can execute the `addlolcat` and `rmlolcat` commands to add or remove command
 `lolcat` must be installed and in the $PATH variable.
 
 
+## Eye Candy Demo
+![eyecandy](https://i.imgur.com/FpJFdzR.png "Eye Candy")
