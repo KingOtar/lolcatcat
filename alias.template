@@ -1,4 +1,2 @@
 #!/bin/bash
 $(basename "$0") "$@" | lolcat
-
-
