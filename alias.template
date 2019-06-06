@@ -1,5 +1,6 @@
 #!/bin/bash
-eval $(basename "$0") "$@" | lolcat
+COM=$(basename "$0")
+$COM "$@" | lolcat
 
 #build arg string as $@ does not tolerate qoutes
 #ARG_STRING=""
