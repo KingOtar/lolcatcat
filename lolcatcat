@@ -12,6 +12,7 @@ check_commands
 COM_FILE=$LOLCATCATHOME/commands
 ALIAS_FILE=$LOLCATCATHOME/aliases
 
+
 #clean out current aliases
 for ali in $ALIAS_FILE/*
 do

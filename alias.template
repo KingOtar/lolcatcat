@@ -3,13 +3,11 @@
 #build arg string as $@ does not tolerate qoutes
 ARG_STRING=""
 for arg_num in $(seq 1 $#)
-do	
-	pattern=" |'"
-	if [[ "${!arg_num}" =~ $pattern ]]
-	then
-		ARG_STRING="$ARG_STRING \"${!arg_num}\""
-	else
-		ARG_STRING="$ARG_STRING ${!arg_num}"
-	fi
+do
+	ARG_STRING="$ARG_STRING ${!arg_num}"
 done
-eval $(basename "$0") $ARG_STRING | lolcat
+
+echo $ARG_STRING
+#output should be echo \"\"help \\\"\"\"
+
+eval $(basename "$0") '$ARG_STRING' | lolcat
