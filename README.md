@@ -7,7 +7,7 @@ This is a collection of bash scripts to alias and manage your commands to pipe t
 Clone this repo and and source the lolcatcat script.
 ```
 git clone https://github.com/KingOtar/lolcatcat.git ~/lolcatcat
-echo "source ~/lolcatcat/lolcatcat" >> .bash_profile
+echo "source ~/lolcatcat/lolcatcat" >> ~/.bash_profile
 ```
 
 ## Usage
@@ -18,6 +18,4 @@ You can execute the `addlolcat` and `rmlolcat` commands to add or remove command
 ## Requirements
 `lolcat` must be installed and in the $PATH variable.
 
-## Warning
-Be careful on which commands are added to this script. They are potentially breaking. Test before usage.
 
